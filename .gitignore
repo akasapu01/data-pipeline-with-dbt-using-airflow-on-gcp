@@ -9,3 +9,13 @@ airflow-webserver.pid
 webserver_config.py
 airflow.cfg
 airflow.db
+
+# dbt build artifacts and local state
+include/dbt/target/
+include/dbt/dbt_packages/
+include/dbt/logs/
+include/dbt/.user.yml
+# Metabase local application database (regenerated on run)
+include/metabase-data/
+# Soda / dbt logs
+logs/
